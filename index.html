@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen</title>
+</head>
+<style>
+    #requete {
+        visibility: hidden;
+    }
+    
+    #reponse {
+        visibility: hidden;
+    }
+</style>
+
+<body>
+    <center>
+        <h3>Formulaire d'enregistrement d'une faculté</h3>
+        <div id="formulaire">
+            <form action="">
+                <div class="form-group">
+                    <label for="code">Code:</label>
+                    <input type="text" class="form-control" id="code">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="libelle">Libelle:</label>
+                    <input type="text" class="form-control" id="libelle">
+                </div>
+                <br>
+                <input name="button" type="button" class="btn btn-info" id="button" onclick="enregistrer();" value="ENREGISTRER">
+            </form>
+        </div>
+        <h2 id="requete">Traiment en cours ....</h2>
+        <h3 id="message"></h3>
+        <div id="reponse">
+            <h3>Code:
+            </h3>
+            <p id="reponseCode"></p>
+            <h3>Libelle:
+            </h3>
+            <p id="reponseLibelle"></p>
+        </div>
+    </center>
+</body>
+<script type="text/javascript" src="requete.js"></script>
+
+</html>
